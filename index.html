@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 432px;
+            left: 768px;
+            background-color: blueviolet;
+            transition: all 10s ease;
+
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#box").click(function(){
+         
+            //$(this).css({transform:"rotate(-360deg)"});
+            const elem = document.getElementById("box");   
+           
+            var pos = $(this).position();
+            console.dir(pos);
+
+            // let id = null;
+            // clearInterval(id);
+            var some =setInterval(LTframe, 3);           
+                     
+            function LTframe() {      
+                //elem.style.top = 1 + "px"; 
+                //elem.style.right = -3 + "px"; 
+                //   elem.style.bottom=3 + "px"; 
+                // elem.style.left=1 + "px";
+                // elem.style.background="red";  
+                     
+            } 
+            clearInterval(some);
+        });
+    });
+    </script>
+</body>
+</html>
