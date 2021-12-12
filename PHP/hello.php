@@ -7,12 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        echo "<h1>Hello World</h1><br>";
-        echo date('m.d.y :h i s')
-    ?>
-    <p>
+   <h1>Hello World</h1>
+      <p>
             <?php
+                echo date('m.d.y :h i s')  
                 $now = time();
                 $new_year = strtotime("2022-01-01");
                 $diff = $new_year-$now;
